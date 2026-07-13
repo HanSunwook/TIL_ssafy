@@ -46,5 +46,31 @@ git commit -m ""
 status
 git log
 
+
 폴더에서 git 쓰지 않기
 
+git remote add [설정이름] [주소]
+관리하기
+
+git remote -v
+뭐 관리하고 있는지 확인할 수 있음
+
+git push [설정이름] master
+git에 push
+
+
+파일 만들기
+touch test.txt
+
+git push -u [설정이름] master
+앞으로 깃 푸시만 하면 됨.([] master 할 필요 없음)
+
+
+# github
+> gitignore 여기에 있는 파일은 전부 깃으로 관리가 안됨
+> api key같은 것들 기록이 남으면 안되기 때문클 데이터, 세팅 등
+
+내가 한번이라도 기록을 남긴 적이 있다면 원격 저장소에 뭔가를 추가로 해서 기록하게 된다면 같이 저장이 안되기 때문에
+추가하면 안됨.
+
+하지만 원격 저장소 먼저 만든다면 add README/.gitignore/license 등 추가해서 만들어도 가능.
